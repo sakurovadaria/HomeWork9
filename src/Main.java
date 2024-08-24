@@ -27,7 +27,7 @@ public class Main {
         int averageSalary = totalSalary / salaryArray.length;
         System.out.println("Средняя сумма трат за месяц составила " + averageSalary + " рублей");
 
-        System.out.println("Task 4");
+        System.out.println("Task 4"); //первое решение
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         int length = reverseFullName.length;
         for (int i = 0; i < length / 2; i++) {
@@ -36,5 +36,12 @@ public class Main {
             reverseFullName[length - 1 - i] = cash;
         }
         System.out.print(reverseFullName);
+        System.out.println();
+
+        System.out.println("Task 4.0"); //второе решение
+        char[] reverseFullName0 = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName0.length - 1; i >= 0; i--) {
+            System.out.print(reverseFullName0[i]);
+        }
     }
 }
